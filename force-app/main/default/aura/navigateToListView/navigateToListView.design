@@ -1,0 +1,6 @@
+<design:component>
+    <design:attribute name="objectApiName" label="Object API Name" required="true"
+        description="REQUIRED. The API name of the object (e.g. Account, Contact, Opportunity, Case, MyObject__c)." />
+    <design:attribute name="listViewApiName" label="List View API Name"
+        description="Optional. The developer name of a specific list view (e.g. All_Open_Cases, Recently_Viewed, My_Accounts). Leave blank for default view." />
+</design:component>

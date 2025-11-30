@@ -1,10 +1,25 @@
 <design:component >
-    <design:attribute name="destinationName" label="Destination Name" default="" />
-    <design:attribute name="destinationRecordId" label="Destination Record Id" default="" />
-    <design:attribute name="destinationType" label="Destination Type" required='true' />
-    <design:attribute name="destinationAction" label="Destination Action"  />
-    <design:attribute name="destinationActionFilter" label="Destination Action Filter"  />
-    <design:attribute name="relationshipName" label="Relationship Name"  />
-    <design:attribute name="destinationUrl" label="Destination URL" default="www.salesforce.com" />
-    <design:attribute name="defaultVals" label="Default Field Values in JSON" />
+    <design:attribute name="destinationType" label="Destination Type" required="true"
+        description="REQUIRED. Choose where to navigate: object | record | url | app | tab | namedpage | experiencepage | knowledge | relatedlist" />
+
+    <design:attribute name="destinationName" label="Destination Name" default=""
+        description="Object API name (Account, Contact, MyObj__c) for 'object' type. App name for 'app'. Page name for 'namedpage'. Tab API name for 'tab'. Article type for 'knowledge'." />
+
+    <design:attribute name="destinationRecordId" label="Destination Record Id" default=""
+        description="REQUIRED for 'record' and 'relatedlist' types. The 18-character Salesforce Record ID to navigate to." />
+
+    <design:attribute name="destinationAction" label="Destination Action"
+        description="For 'object' type: home | list | new. For 'record' type: view | edit | clone. For 'relatedlist': view only." />
+
+    <design:attribute name="destinationActionFilter" label="List View Filter Name"
+        description="ONLY for 'object' type with 'list' or 'home' action. The developer name of the list view (e.g. All_Open_Cases, Recently_Viewed)." />
+
+    <design:attribute name="relationshipName" label="Relationship Name"
+        description="ONLY for 'relatedlist' type. The child relationship API name found on the lookup field (e.g. OpportunityLineItems, CaseComments, Contacts)." />
+
+    <design:attribute name="destinationUrl" label="Destination URL" default=""
+        description="REQUIRED for 'url' type (full URL with https://). For 'knowledge' type: the urlName field value from KnowledgeArticleVersion." />
+
+    <design:attribute name="defaultVals" label="Default Field Values (JSON)"
+        description="ONLY for 'object' type with 'new' action. Pass field defaults as JSON: {\"FirstName\": \"John\", \"AccountId\": \"{!recordId}\"}. Use a formula to build this string." />
 </design:component>

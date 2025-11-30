@@ -1,0 +1,8 @@
+<design:component>
+    <design:attribute name="recordId" label="Record ID" required="true"
+        description="REQUIRED. The 18-character Salesforce Record ID to navigate to. Use {!myVariable} to pass from Flow." />
+    <design:attribute name="objectApiName" label="Object API Name"
+        description="Optional. The API name of the object (e.g. Account, Contact, MyObject__c). Helps with page resolution." />
+    <design:attribute name="actionName" label="Action" required="true"
+        description="REQUIRED. Choose: view (open record page) | edit (open edit modal) | clone (open clone page)" />
+</design:component>

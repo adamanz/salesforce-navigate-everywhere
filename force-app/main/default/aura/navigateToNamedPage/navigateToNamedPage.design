@@ -1,0 +1,6 @@
+<design:component>
+    <design:attribute name="pageName" label="Page Name" required="true"
+        description="REQUIRED. For Lightning Experience: home, chatter, today, dataAssessment, filePreview. For Experience Cloud: home, account-management, contact-support, error, login, top-articles, topic-catalog, or custom page URL." />
+    <design:attribute name="isExperiencePage" label="Is Experience Cloud Page?"
+        description="Set to {!$GlobalConstant.True} if navigating to an Experience Cloud (Community) page. Leave false for standard Lightning Experience pages." />
+</design:component>

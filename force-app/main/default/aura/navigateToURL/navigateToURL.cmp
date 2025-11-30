@@ -1,0 +1,8 @@
+<!--
+    Navigate to URL - Flow Action
+    Simplified action to navigate to any web URL.
+-->
+<aura:component implements="lightning:availableForFlowActions">
+    <lightning:navigation aura:id="navService"/>
+    <aura:attribute name="url" type="String" description="The full URL to navigate to" />
+</aura:component>

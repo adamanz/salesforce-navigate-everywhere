@@ -1,0 +1,4 @@
+<design:component>
+    <design:attribute name="appTarget" label="App Target" required="true"
+        description="REQUIRED. Either the App ID (DurableId from AppDefinition) OR the developer name with namespace. For standard apps: standard__AppName. For custom apps: c__MyAppName. For managed packages: namespace__AppName." />
+</design:component>

@@ -1,0 +1,8 @@
+<design:component>
+    <design:attribute name="recordId" label="Parent Record ID" required="true"
+        description="REQUIRED. The 18-character ID of the parent record whose related list you want to view." />
+    <design:attribute name="objectApiName" label="Parent Object API Name" required="true"
+        description="REQUIRED. The API name of the parent object (e.g. Account, Opportunity, Case)." />
+    <design:attribute name="relationshipApiName" label="Relationship API Name" required="true"
+        description="REQUIRED. The child relationship name from the lookup field. Find this in Object Manager on the child object's lookup field (e.g. Contacts, OpportunityLineItems, CaseComments)." />
+</design:component>

@@ -1,0 +1,8 @@
+<!--
+    Navigate to App - Flow Action
+    Simplified action to navigate to a Lightning App.
+-->
+<aura:component implements="lightning:availableForFlowActions">
+    <lightning:navigation aura:id="navService"/>
+    <aura:attribute name="appTarget" type="String" description="The app ID or developer name with namespace prefix" />
+</aura:component>

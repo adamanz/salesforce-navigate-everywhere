@@ -1,0 +1,9 @@
+<!--
+    Navigate to List View - Flow Action
+    Simplified action to navigate to an object's list view or home page.
+-->
+<aura:component implements="lightning:availableForFlowActions">
+    <lightning:navigation aura:id="navService"/>
+    <aura:attribute name="objectApiName" type="String" description="The API name of the object (e.g. Account, Contact)" />
+    <aura:attribute name="listViewApiName" type="String" description="Optional: The API name of a specific list view" />
+</aura:component>

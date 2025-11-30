@@ -1,0 +1,10 @@
+<!--
+    Navigate to Record - Flow Action
+    Simplified action to navigate to an existing record in view, edit, or clone mode.
+-->
+<aura:component implements="lightning:availableForFlowActions">
+    <lightning:navigation aura:id="navService"/>
+    <aura:attribute name="recordId" type="String" description="The 18-character Salesforce Record ID" />
+    <aura:attribute name="objectApiName" type="String" description="Optional: The API name of the object (e.g. Account, Contact)" />
+    <aura:attribute name="actionName" type="String" default="view" description="view, edit, or clone" />
+</aura:component>

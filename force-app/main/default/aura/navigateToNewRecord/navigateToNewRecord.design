@@ -1,0 +1,6 @@
+<design:component>
+    <design:attribute name="objectApiName" label="Object API Name" required="true"
+        description="REQUIRED. The API name of the object to create (e.g. Account, Contact, Opportunity, MyObject__c)." />
+    <design:attribute name="defaultFieldValues" label="Default Field Values (JSON)"
+        description="Optional. Pre-populate fields using JSON format. Example: {\"FirstName\": \"John\", \"LastName\": \"Doe\", \"AccountId\": \"001xx000003DGXXX\"}. Build with a Flow formula like: '{\"Name\": \"' &amp; {!varName} &amp; '\"}'" />
+</design:component>

@@ -1,0 +1,4 @@
+<design:component>
+    <design:attribute name="url" label="URL" required="true"
+        description="REQUIRED. The full URL to navigate to (e.g. https://www.salesforce.com, https://help.salesforce.com/article). Include https:// prefix." />
+</design:component>

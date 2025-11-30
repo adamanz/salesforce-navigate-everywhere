@@ -1,0 +1,10 @@
+<!--
+    Navigate to Related List - Flow Action
+    Simplified action to navigate to a related list for a specific record.
+-->
+<aura:component implements="lightning:availableForFlowActions">
+    <lightning:navigation aura:id="navService"/>
+    <aura:attribute name="recordId" type="String" description="The parent record ID" />
+    <aura:attribute name="objectApiName" type="String" description="The parent object API name" />
+    <aura:attribute name="relationshipApiName" type="String" description="The child relationship API name" />
+</aura:component>

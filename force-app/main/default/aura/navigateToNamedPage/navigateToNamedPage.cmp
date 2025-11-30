@@ -1,0 +1,9 @@
+<!--
+    Navigate to Named Page - Flow Action
+    Simplified action to navigate to a standard named page or Experience Cloud page.
+-->
+<aura:component implements="lightning:availableForFlowActions">
+    <lightning:navigation aura:id="navService"/>
+    <aura:attribute name="pageName" type="String" description="The name of the page to navigate to" />
+    <aura:attribute name="isExperiencePage" type="Boolean" default="false" description="Set to true for Experience Cloud pages" />
+</aura:component>

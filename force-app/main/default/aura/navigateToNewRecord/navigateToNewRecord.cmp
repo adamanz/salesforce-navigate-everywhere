@@ -1,0 +1,10 @@
+<!--
+    Navigate to New Record - Flow Action
+    Simplified action to open a new record creation form with optional default field values.
+-->
+<aura:component implements="lightning:availableForFlowActions">
+    <lightning:pageReferenceUtils aura:id="pageRefUtils"/>
+    <lightning:navigation aura:id="navService"/>
+    <aura:attribute name="objectApiName" type="String" description="The API name of the object (e.g. Account, Contact, MyObject__c)" />
+    <aura:attribute name="defaultFieldValues" type="String" description="JSON string of default field values" />
+</aura:component>
